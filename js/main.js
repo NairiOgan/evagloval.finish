@@ -1111,25 +1111,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // =====================================================================
 // Отложенная загрузка яндекс карт
-// Проверка элемента на наличие его в DOM
-let divMap = document.querySelector('#yamap');
-if (divMap) {
-    let ok = false;
-
-    function loadMap(mapUrl, targetElementId) {
-        if (ok === false) {
-            ok = true;
-            setTimeout(() => {
-                let script = document.createElement('script');
-                script.src = mapUrl;
-                document.getElementById(targetElementId).replaceWith(script);
-            }, 3500);
-        }
-    }
-    
-    // Вешаем обработчик
-    window.addEventListener('scroll', function () {
-    loadMap('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae588bc8558c4d51c7308a36ae9729e8993abf3c8fc46f0339f06d0ad05ceee75&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true', 'yamap');
-    });
+function loadMap(mapUrl, targetElementId) {
+  // Проверяем наличие элемента в DOM
+  const targetElement = document.getElementById(targetElementId);
+  if (targetElement) {
+    // Если элемент существует, загружаем карту
+    let script = document.createElement('script');
+    script.src = mapUrl;
+    targetElement.replaceWith(script);
+  }
 }
+
+// Вешаем обработчик
+window.addEventListener('scroll', function () {
+  loadMap('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae588bc8558c4d51c7308a36ae9729e8993abf3c8fc46f0339f06d0ad05ceee75&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true', 'yamap');
+});
+
 
