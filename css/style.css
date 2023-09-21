@@ -3064,10 +3064,10 @@ section {
   gap: 20px;
   width: 100%;
 }
-
+/* 
 .product-section-wrap__options__item._cover {
   align-items: center;
-}
+} */
 
 .product-section-wrap__options__item__option__content._colors {
   gap: 20px;
