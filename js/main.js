@@ -219,58 +219,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // =====================================================================
 // Изменение цветов в конструкторе
-// Проверка элемента на наличие его в DOM 
-if (document.querySelector('.color-btn')) {
-  // Получаем все кнопки цветов
-  const colorButtons = document.querySelectorAll('.color-btn');
+// Получаем все кнопки цветов
+const colorButtons = document.querySelectorAll('.color-btn');
 
-  // Получаем элемент .constructor-wrap__result__body
-  const carMatBody = document.querySelector('.constructor-wrap__result__body');
+// Получаем элемент .constructor-wrap__result__body
+const carMatBody = document.querySelector('.constructor-wrap__result__body');
 
-  // Функция для установки класса
-  function setColorClass(event) {
-      const selectedColor = event.target.dataset.color;
+// Функция для установки класса
+function setColorClass(event) {
+  const selectedColor = event.target.dataset.color;
 
-      // Удаляем предыдущие классы цветов
-      const colorClasses = ['colorBlack', 'colorPeachy', 'colorDarkenGray', 'colorPurple', 'colorOrange', 'colorLightGreen', 'colorDarkGreen', 'colorBlue', 'colorLightBrownishGray', 'colorLightBeige', 'colorDarkBrown', 'colorWhite', 'colorYellow', 'colorDarkBlue'];
-      carMatBody.classList.remove(...colorClasses);
+  // Удаляем предыдущие классы цветов
+  const colorClasses = ['colorBlack', 'colorPeachy', 'colorDarkenGray', 'colorPurple', 'colorOrange', 'colorLightGreen', 'colorDarkGreen', 'colorBlue', 'colorLightBrownishGray', 'colorLightBeige', 'colorDarkBrown', 'colorWhite', 'colorYellow', 'colorDarkBlue'];
+  carMatBody.classList.remove(...colorClasses);
 
-      // Добавляем выбранный класс
-      carMatBody.classList.add(selectedColor);
-  }
-
-  // Добавляем обработчик для каждой кнопки цвета
-  colorButtons.forEach(function(button) {
-      button.addEventListener('click', setColorClass);
-  });
+  // Добавляем выбранный класс
+  carMatBody.classList.add(selectedColor);
 }
+
+// Добавляем обработчик для каждой кнопки цвета
+colorButtons.forEach(function(button) {
+  button.addEventListener('click', setColorClass);
+});
 
 // =====================================================================
 // Получаем все кнопки цветов контура
-// Проверка элемента на наличие его в DOM 
-if (document.querySelector('.color-cant-btn')) {
-  const colorCantButtons = document.querySelectorAll('.color-cant-btn');
+const colorCantButtons = document.querySelectorAll('.color-cant-btn');
 
-  // Получаем элемент контура
-  const carMatCant = document.querySelector('.constructor-wrap__result__cant');
-  
-  // Функция для установки класса цвета контура
-  function setCantColorClass(event) {
-      const selectedColor = event.target.dataset.color;
-  
-      // Удаляем предыдущие классы цветов контура
-      const colorClasses = ['colorCantСhartreuse', 'colorCantFeldgrau', 'colorCantLightYellow', 'colorCantYellow', 'colorCantOrange', 'colorCantRed', 'colorCantMaroon', 'colorCantDarkBrown', 'colorCantPurple', 'colorCantDarkBlue', 'colorCantLightBlack', 'colorCantBlue', 'colorCantLilac', 'colorCantCelestial', 'colorCantBrown', 'colorCantYellowishGray', 'colorCantGraniteGray', 'colorCantPearlescentLightGray', 'colorCantTimberWolf', 'colorCantBlack'];
-      carMatCant.classList.remove(...colorClasses);
-  
-      // Добавляем выбранный класс
-      carMatCant.classList.add(selectedColor);
-  }
-  
-  // Добавляем обработчик для каждой кнопки цвета контура
-  colorCantButtons.forEach(function(button) {
-      button.addEventListener('click', setCantColorClass);
-  });
+// Получаем элемент контура
+const carMatCant = document.querySelector('.constructor-wrap__result__cant');
+
+// Функция для установки класса цвета контура
+function setCantColorClass(event) {
+  const selectedColor = event.target.dataset.color;
+
+  // Удаляем предыдущие классы цветов контура
+  const colorClasses = ['colorCantСhartreuse', 'colorCantFeldgrau', 'colorCantLightYellow', 'colorCantYellow', 'colorCantOrange', 'colorCantRed', 'colorCantMaroon', 'colorCantDarkBrown', 'colorCantPurple', 'colorCantDarkBlue', 'colorCantLightBlack', 'colorCantBlue', 'colorCantLilac', 'colorCantCelestial', 'colorCantBrown', 'colorCantYellowishGray', 'colorCantGraniteGray', 'colorCantPearlescentLightGray', 'colorCantTimberWolf', 'colorCantBlack'];
+  carMatCant.classList.remove(...colorClasses);
+
+  // Добавляем выбранный класс
+  carMatCant.classList.add(selectedColor);
 }
+
+// Добавляем обработчик для каждой кнопки цвета контура
+colorCantButtons.forEach(function(button) {
+  button.addEventListener('click', setCantColorClass);
+});
 
 
 // =====================================================================
