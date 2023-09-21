@@ -219,55 +219,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // =====================================================================
 // Изменение цветов в конструкторе
+// Проверка элемента на наличие его в DOM 
+if (document.querySelector('.color-btn')) {
+  // Получаем все кнопки цветов
+  const colorButtons = document.querySelectorAll('.color-btn');
 
-// Получаем все кнопки цветов
-const colorButtons = document.querySelectorAll('.color-btn');
+  // Получаем элемент .constructor-wrap__result__body
+  const carMatBody = document.querySelector('.constructor-wrap__result__body');
 
-// Получаем элемент .constructor-wrap__result__body
-const carMatBody = document.querySelector('.constructor-wrap__result__body');
+  // Функция для установки класса
+  function setColorClass(event) {
+      const selectedColor = event.target.dataset.color;
 
-// Функция для установки класса
-function setColorClass(event) {
-  const selectedColor = event.target.dataset.color;
+      // Удаляем предыдущие классы цветов
+      const colorClasses = ['colorBlack', 'colorPeachy', 'colorDarkenGray', 'colorPurple', 'colorOrange', 'colorLightGreen', 'colorDarkGreen', 'colorBlue', 'colorLightBrownishGray', 'colorLightBeige', 'colorDarkBrown', 'colorWhite', 'colorYellow', 'colorDarkBlue'];
+      carMatBody.classList.remove(...colorClasses);
 
-  // Удаляем предыдущие классы цветов
-  const colorClasses = ['colorBlack', 'colorPeachy', 'colorDarkenGray', 'colorPurple', 'colorOrange', 'colorLightGreen', 'colorDarkGreen', 'colorBlue', 'colorLightBrownishGray', 'colorLightBeige', 'colorDarkBrown', 'colorWhite', 'colorYellow', 'colorDarkBlue'];
-  carMatBody.classList.remove(...colorClasses);
+      // Добавляем выбранный класс
+      carMatBody.classList.add(selectedColor);
+  }
 
-  // Добавляем выбранный класс
-  carMatBody.classList.add(selectedColor);
+  // Добавляем обработчик для каждой кнопки цвета
+  colorButtons.forEach(function(button) {
+      button.addEventListener('click', setColorClass);
+  });
 }
-
-// Добавляем обработчик для каждой кнопки цвета
-colorButtons.forEach(function(button) {
-  button.addEventListener('click', setColorClass);
-});
-
 
 // =====================================================================
 // Получаем все кнопки цветов контура
-const colorCantButtons = document.querySelectorAll('.color-cant-btn');
+// Проверка элемента на наличие его в DOM 
+if (document.querySelector('.color-cant-btn')) {
+  const colorCantButtons = document.querySelectorAll('.color-cant-btn');
 
-// Получаем элемент контура
-const carMatCant = document.querySelector('.constructor-wrap__result__cant');
-
-// Функция для установки класса цвета контура
-function setCantColorClass(event) {
-  const selectedColor = event.target.dataset.color;
-
-  // Удаляем предыдущие классы цветов контура
-  const colorClasses = ['colorCantСhartreuse', 'colorCantFeldgrau', 'colorCantLightYellow', 'colorCantYellow', 'colorCantOrange', 'colorCantRed', 'colorCantMaroon', 'colorCantDarkBrown', 'colorCantPurple', 'colorCantDarkBlue', 'colorCantLightBlack', 'colorCantBlue', 'colorCantLilac', 'colorCantCelestial', 'colorCantBrown', 'colorCantYellowishGray', 'colorCantGraniteGray', 'colorCantPearlescentLightGray', 'colorCantTimberWolf', 'colorCantBlack'];
-  carMatCant.classList.remove(...colorClasses);
-
-  // Добавляем выбранный класс
-  carMatCant.classList.add(selectedColor);
+  // Получаем элемент контура
+  const carMatCant = document.querySelector('.constructor-wrap__result__cant');
+  
+  // Функция для установки класса цвета контура
+  function setCantColorClass(event) {
+      const selectedColor = event.target.dataset.color;
+  
+      // Удаляем предыдущие классы цветов контура
+      const colorClasses = ['colorCantСhartreuse', 'colorCantFeldgrau', 'colorCantLightYellow', 'colorCantYellow', 'colorCantOrange', 'colorCantRed', 'colorCantMaroon', 'colorCantDarkBrown', 'colorCantPurple', 'colorCantDarkBlue', 'colorCantLightBlack', 'colorCantBlue', 'colorCantLilac', 'colorCantCelestial', 'colorCantBrown', 'colorCantYellowishGray', 'colorCantGraniteGray', 'colorCantPearlescentLightGray', 'colorCantTimberWolf', 'colorCantBlack'];
+      carMatCant.classList.remove(...colorClasses);
+  
+      // Добавляем выбранный класс
+      carMatCant.classList.add(selectedColor);
+  }
+  
+  // Добавляем обработчик для каждой кнопки цвета контура
+  colorCantButtons.forEach(function(button) {
+      button.addEventListener('click', setCantColorClass);
+  });
 }
-
-// Добавляем обработчик для каждой кнопки цвета контура
-colorCantButtons.forEach(function(button) {
-  button.addEventListener('click', setCantColorClass);
-});
-
 
 
 // =====================================================================
@@ -1083,22 +1086,46 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // =====================================================================
 // Отложенная загрузка яндекс карт
+// Проверка элемента на наличие его в DOM 
 let ok = false;
 
-  function loadMap(mapUrl, targetElementId) {
-    if (ok === false) {
-        ok = true;
-        setTimeout(() => {
-            let script = document.createElement('script');
-            script.src = mapUrl;
-            document.getElementById(targetElementId).replaceWith(script);
-        }, 3500);
-    }
-  }
+function loadMap(mapUrl, targetElementId) {
+if (ok === false) {
+    ok = true;
+    setTimeout(() => {
+        let script = document.createElement('script');
+        script.src = mapUrl;
+        document.getElementById(targetElementId).replaceWith(script);
+    }, 3500);
+}
+}
 
-  // Вешаем обработчик
-  window.addEventListener('scroll', function () {
-    loadMap('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae588bc8558c4d51c7308a36ae9729e8993abf3c8fc46f0339f06d0ad05ceee75&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true', 'yamap');
-  });
+// Вешаем обработчик
+window.addEventListener('scroll', function () {
+loadMap('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae588bc8558c4d51c7308a36ae9729e8993abf3c8fc46f0339f06d0ad05ceee75&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true', 'yamap');
+});
