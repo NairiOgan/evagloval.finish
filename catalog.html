@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог Eva Global - автомобильные EVA Коврики</title>
+    
+    <!-- swiper-js slider  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+
+    <!-- main css files  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexibility.css">
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="favicon-32x32.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Мобильное меню  -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__column mobile-menu__column_one">
+            <a href="index.html" class="mobile-menu__column_one__item">главная</a>
+            <a href="index.html#benefits" class="mobile-menu__column_one__item menu-item">преимущества</a>
+            <a href="index.html#constructor" class="mobile-menu__column_one__item menu-item">конструктор</a>
+            <a href="catalog.html" class="mobile-menu__column_one__item active">каталог</a>
+            <a href="about.html" class="mobile-menu__column_one__item">о нас</a>
+            <a href="index.html#delivery-payments" class="mobile-menu__column_one__item menu-item">доставка</a>
+            <a href="index.html#contacts" class="mobile-menu__column_one__item menu-item">контакты</a>
+            <a href="catalog.html" class="mobile-menu__column_one__item menu-item _red">распродажа</a>
+        </div>
+        <div class="mobile-menu__column mobile-menu__column_two">
+            <a href="tel:89671467000" class="mobile-menu__column_two__tel">8 967 146-70-00</a>
+            <a href="#" class="mobile-menu__column_two__link">вконтакте</a>
+            <a href="#" class="mobile-menu__column_two__link">whatsapp</a>
+            <a href="index.html#contacts" class="mobile-menu__column_two__more-soc menu-item">еще контакты</a>
+        </div>
+        <div class="mobile-menu__column mobile-menu__column_three">
+            <p class="mobile-menu__column_three__city">г. Москва</p>
+        </div>
+    </div>
+    <!-- Кнопка скролла наверх для мобилок  -->
+    <button id="scrollToTopButton" class="scroll-to-top-button"><img src="img/icons/arrow-top.svg" alt="&#8593;"></button>
+    <!-- Фиксированная шапка  -->
+    <div class="header fixed-header">
+        <div class="container">
+            <nav class="header-menu">
+                <div class="header-menu__logo-and-menu-block">
+                    <button class="mobile__btn">
+                        <img src="img/icons/menu-burger-icon.svg" alt="Меню">
+                    </button>
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="Eva Global">
+                    </a>
+                    <button class="header__tel-link openModal">
+                        <img src="img/icons/tel-icon.svg" alt="Позвонить">
+                    </button>
+                </div>
+                <ul class="header-menu__list _desktop">
+                    <li class="header-menu__list__item"><a href="index.html">главная</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#benefits">преимущества</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#constructor">конструктор</a></li>
+                    <li class="header-menu__list__item active"><a href="catalog.html">каталог</a></li>
+                    <li class="header-menu__list__item"><a href="about.html">о нас</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#delivery-payments">доставка</a></li>
+                    <li class="header-menu__list__item _red"><a href="catalog.html">распродажа</a></li>
+                </ul>
+                <button class="header__btn openModal">обратный звонок</button>
+            </nav>
+        </div>
+    </div>
+    <!-- Статичная шапка  -->
+    <header class="header static-header">
+        <div class="container">
+            <nav class="header-menu">
+                <div class="header-menu__logo-and-menu-block">
+                    <button class="mobile__btn">
+                        <img src="img/icons/menu-burger-icon.svg" alt="Меню">
+                    </button>
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="Eva Global">
+                    </a>
+                    <button class="header__tel-link openModal">
+                        <img src="img/icons/tel-icon.svg" alt="Позвонить">
+                    </button>
+                </div>
+                <ul class="header-menu__list _desktop">
+                    <li class="header-menu__list__item"><a href="index.html">главная</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#benefits">преимущества</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#constructor">конструктор</a></li>
+                    <li class="header-menu__list__item active"><a href="catalog.html">каталог</a></li>
+                    <li class="header-menu__list__item"><a href="about.html">о нас</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#delivery-payments">доставка</a></li>
+                    <li class="header-menu__list__item _red"><a href="catalog.html">распродажа</a></li>
+                </ul>
+                <button class="header__btn openModal">обратный звонок</button>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="offer-other-page">
+        <div class="container">
+            <div class="offer-top offer-content">
+                <p class="offer-top__address offer-top__address_other">г. Москва</p>
+                <div class="offer-top__contacts">
+                    <a href="#" class="offer-top__contacts__social-link offer-top__contacts__social-link_other">вконтакте</a>
+                    <a href="#" class="offer-top__contacts__social-link offer-top__contacts__social-link_other">whatsapp</a>
+                    <a href="tel:89671467000" class="offer-top__contacts__phone-link offer-top__contacts__phone-link_other">8 967 146-70-00</a>
+                    <a href="index.html#contacts" class="offer-top__contacts__more-social menu-item offer-top__contacts__more-social_other">еще контакты</a>
+                </div>
+            </div>
+            <div class="offer-crumbs-block">
+                <a href="index.html" class="offer-crumbs-block__item _mobile">
+                    <img src="img/icons/home-icon.svg" alt="Главная страница">
+                </a>
+                <a href="index.html" class="offer-crumbs-block__item _desktop">Главная страница</a>
+                <a href="catalog.html" class="offer-crumbs-block__item active">Каталог</a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog main">
+        <div class="container">
+            <h1 class="section__title section__title_main">поиск по параметрам</h1>
+            <div class="catalog-wrap">
+                <div class="catalog__parameters__wrap">
+                    <div class="catalog__parameters__tabs tabs">
+                        <div class="catalog__parameters__tabs__tab tab-button active" data-tab="catalogСarpetTab">коврики</div>
+                        <div class="catalog__parameters__tabs__tab tab-button" data-tab="catalogAccessoriesTab">аксессуары</div>
+                    </div>
+                </div>
+
+                <!-- Коврики  -->
+                <div id="catalogСarpetTab" class="catalog-wrap__body tab-content active">
+                    <div id="carForm" class="catalog__parameters">
+                        <div class="catalog__parameters__selects">
+                            <div class="catalog__parameters__selects__item">
+                                <div class="custom-select custom-select_catalog car-mark-select" data-input-name="car_mark">
+                                    <div class="select-selected select-selected_catalog">Марка автомобиля</div>
+                                    <div class="select-items select-hide">
+                                        <div class="select-items__item _catalog" data-value="car_mark1" data-label="Опция 1">Опция 1</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark2" data-label="Опция 2">Опция 2</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark3" data-label="Опция 3">Опция 3</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark4" data-label="Опция 4">Опция 4</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark5" data-label="Опция 5">Опция 5</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark6" data-label="Опция 6">Опция 6</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark7" data-label="Опция 7">Опция 7</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark8" data-label="Опция 8">Опция 8</div>
+                                        <div class="select-items__item _catalog" data-value="car_mark9" data-label="Опция 9">Опция 9</div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="car_mark" value="">
+                            </div>
+    
+                            <div class="catalog__parameters__selects__item">
+                                <div class="custom-select custom-select_catalog car-model-select" data-input-name="car_model">
+                                    <div class="select-selected select-selected_catalog">Модель автомобиля</div>
+                                    <div class="select-items select-hide">
+                                        <div class="select-items__item _catalog" data-value="car_model1" data-label="Опция 1">Опция 1</div>
+                                        <div class="select-items__item _catalog" data-value="car_model2" data-label="Опция 2">Опция 2</div>
+                                        <div class="select-items__item _catalog" data-value="car_model3" data-label="Опция 3">Опция 3</div>
+                                        <div class="select-items__item _catalog" data-value="car_model4" data-label="Опция 4">Опция 4</div>
+                                        <div class="select-items__item _catalog" data-value="car_model5" data-label="Опция 5">Опция 5</div>
+                                        <div class="select-items__item _catalog" data-value="car_model6" data-label="Опция 6">Опция 6</div>
+                                        <div class="select-items__item _catalog" data-value="car_model7" data-label="Опция 7">Опция 7</div>
+                                        <div class="select-items__item _catalog" data-value="car_model8" data-label="Опция 8">Опция 8</div>
+                                        <div class="select-items__item _catalog" data-value="car_model9" data-label="Опция 9">Опция 9</div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="car_model" value="">
+                            </div>
+    
+                            <div class="catalog__parameters__selects__item">
+                                <div class="custom-select custom-select_catalog car-generation-select" data-input-name="car_generation">
+                                    <div class="select-selected select-selected_catalog">Поколение</div>
+                                    <div class="select-items select-hide">
+                                        <div class="select-items__item _catalog" data-value="car_generation1" data-label="Опция 1">Опция 1</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation2" data-label="Опция 2">Опция 2</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation3" data-label="Опция 3">Опция 3</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation4" data-label="Опция 4">Опция 4</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation5" data-label="Опция 5">Опция 5</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation6" data-label="Опция 6">Опция 6</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation7" data-label="Опция 7">Опция 7</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation8" data-label="Опция 8">Опция 8</div>
+                                        <div class="select-items__item _catalog" data-value="car_generation9" data-label="Опция 9">Опция 9</div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="car_generation" value="">
+                            </div>
+                        </div>
+    
+                        <div class="catalog__parameters__categoryes">
+                            <label class="catalog__parameters__categoryes__item" for="newProducts">
+                                <input class="radio" type="checkbox" id="newProducts" name="newProducts" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="catalog__parameters__categoryes__item__label" >Новое</span>
+                            </label>
+    
+                            <label class="catalog__parameters__categoryes__item" for="stockProducts">
+                                <input class="radio" type="checkbox" id="stockProducts" name="stockProducts" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="catalog__parameters__categoryes__item__label">Акционные товары</span>
+                            </label>
+    
+                            <label class="catalog__parameters__categoryes__item" for="saleProducts">
+                                <input class="radio" type="checkbox" id="saleProducts" name="saleProducts" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="catalog__parameters__categoryes__item__label">Распродажа</span>
+                            </label>
+                        </div>                
+                    </div>
+    
+                    <div id="catalogСarpet" class="catalog__products">
+                        <!-- <p class="catalog__products__not-found">Товаров по заданным параметрам не найдено.</p> -->
+    
+                        <div class="catalog__products__item">
+                            <span class="catalog__products__item__category _new">новое</span>
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <span class="catalog__products__item__category _stock">акция</span>
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <span class="catalog__products__item__category _sale">распродажа</span>
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <span class="catalog__products__item__category _new">новое</span>
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <a href="product-carpet.html" class="catalog__products__item__img">
+                                <img src="img/products-img/1.png" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">EVA коврики в салон BMW 3 VI (F31) Универсал (2011 - 2019)</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-carpet.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                    </div>
+    
+                    <div class="catalog__pagination">
+                        <a href="#" class="pagination-btn catalog__pagination__prev-btn"><img src="img/icons/pagination-arrow-left.svg" alt="Назад"></a>
+                        <div class="catalog__pagination__links">
+                            <a href="#" class="catalog__pagination__links__item active">1</a>
+                            <a href="#" class="catalog__pagination__links__item">2</a>
+                            <a href="#" class="catalog__pagination__links__item">3</a>
+                            <span>...</span>
+                            <a href="#" class="catalog__pagination__links__item">10</a>
+                            <a href="#" class="catalog__pagination__links__item">11</a>
+                        </div>
+                        <a href="#" class="pagination-btn catalog__pagination__next-btn"><img src="img/icons/pagination-arrow-right.svg" alt="Вперед"></a>
+                    </div>
+                </div>
+
+                <!-- Аксессуары  -->
+                <div id="catalogAccessoriesTab" class="catalog-wrap__body tab-content">
+                    <div class="catalog__parameters">
+                        <div class="catalog__parameters__categoryes">
+                            <label class="catalog__parameters__categoryes__item" for="newProductsAccessories">
+                                <input class="radio" type="checkbox" id="newProductsAccessories" name="newProductsAccessories" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="catalog__parameters__categoryes__item__label" >Новое</span>
+                            </label>
+    
+                            <label class="catalog__parameters__categoryes__item" for="stockProductsAccessories">
+                                <input class="radio" type="checkbox" id="stockProductsAccessories" name="stockProductsAccessories" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="catalog__parameters__categoryes__item__label">Акционные товары</span>
+                            </label>
+                        </div>                
+                    </div>
+    
+                    <div id="catalogAccessories" class="catalog__products">
+                        <!-- <p class="catalog__products__not-found">Товаров по заданным параметрам не найдено.</p> -->
+    
+                        <div class="catalog__products__item">
+                            <!-- <span class="catalog__products__item__category _new">новое</span> -->
+                            <a href="product-cover.html" class="catalog__products__item__img">
+                                <img src="img/additional-accessories-img/additional-accessories-img-seat-cover.jpg" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">Велюровая накидка на сиднение</h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-cover.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                        <div class="catalog__products__item">
+                            <!-- <span class="catalog__products__item__category _new">новое</span> -->
+                            <a href="product-organizer.html" class="catalog__products__item__img">
+                                <img src="img/additional-accessories-img/additional-accessories-img-organaizer.jpg" alt="123">
+                            </a>
+                            <h3 class="catalog__products__item__title">Сумка-органайзер в багажник </h3>
+                            <p class="catalog__products__item__price-tag">3500₽</p>
+                            <a href="product-organizer.html" class="catalog__products__item__btn btn-red">заказать</a>
+                        </div>
+    
+                    </div>
+    
+                    <!-- <div class="catalog__pagination">
+                        <a href="#" class="pagination-btn catalog__pagination__prev-btn"><img src="img/icons/pagination-arrow-left.svg" alt="Назад"></a>
+                        <div class="catalog__pagination__links">
+                            <a href="#" class="catalog__pagination__links__item active">1</a>
+                            <a href="#" class="catalog__pagination__links__item">2</a>
+                            <a href="#" class="catalog__pagination__links__item">3</a>
+                            <span>...</span>
+                            <a href="#" class="catalog__pagination__links__item">10</a>
+                            <a href="#" class="catalog__pagination__links__item">11</a>
+                        </div>
+                        <a href="#" class="pagination-btn catalog__pagination__next-btn"><img src="img/icons/pagination-arrow-right.svg" alt="Вперед"></a>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="contacts" class="contacts _white">
+        <div class="container-second">
+            <h2 class="section__title">контакты</h2>
+            <p class="section__text">Готовы ответить на любые ваши вопросы и принять заказа</p>
+            <div class="contacts__wrap">
+                <div class="contacts__wrap__map">
+                    <div id="yamap"></div>
+                </div>
+                <div class="contacts__wrap__info">
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы менеджеров:</h3>
+                        <p class="contacts__wrap__info__item__text">пн - пт 09:00-19:00 (МСК), сб - вс 09:00-18:00</p>
+                    </div>
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы отдела производства:</h3>
+                        <p class="contacts__wrap__info__item__text">пн-пт 10:00-18:00 (МСК), сб - 10:00-17:00, вс - выходной. Без обеденного перерыва.</p>
+                    </div>
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы интернет-магазина:</h3>
+                        <p class="contacts__wrap__info__item__text">Круглосуточно</p>
+                    </div>
+                    <div class="contacts__wrap__info__social">
+                        <a href="tel:89671467000" class="contacts__wrap__info__social__tel">8 967 146-70-00</a>
+                        <div class="contacts__wrap__info__social__messengers">
+                            <a href="#" class="contacts__wrap__info__social__messengers__link">вконтакте</a>
+                            <a href="#" class="contacts__wrap__info__social__messengers__link">whatsapp</a>
+                            <button class="btn-blue contacts__wrap__info__social__messengers__btn openModal">обратный звонок</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-second _mobilee">
+            <div class="contacts__hint-block">
+                <p class="contacts__hint-block__text">
+                    <strong>Все заказы, оформленные в нерабочее время</strong>, согласовываются с покупателем (по телефону, через мессенджеры или по электронной почте) <strong>на следующий рабочий день компании</strong> и передаются в производство. Датой оформления заказа является не день оплаты, <strong>а дата его подтверждения и согласования с менеджером.</strong> Учитывайте рабочие часы компании при осуществлении звонков для консультаций.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+
+                <div class="footer__wrap__column footer__wrap__column_company-links">
+                    <a href="index.html" class="footer__logo-link">
+                        <img src="img/logo-white.svg" alt="EVA GLOBAL">
+                    </a>
+                    <p class="footer__policy-text">2023 ©<br>Все права защищены</p>
+                    <a href="policy.html" target="_blank" class="footer__policy-link footer-link-hover">Политика конфиденциальности</a>
+                    <a href="partnership.html" target="_blank" class="footer__partnership-link footer-link-hover">партнерство</a>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_navigation">
+                    <a href="index.html" class="footer__wrap__column_navigation__item footer-link-hover">главная</a>
+                    <a href="index.html#benefits" class="menu-item footer__wrap__column_navigation__item footer-link-hover">преимущества</a>
+                    <a href="index.html#constructor" class="menu-item footer__wrap__column_navigation__item footer-link-hover">конструктор</a>
+                    <a href="catalog.html" class="footer__wrap__column_navigation__item footer-link-hover active">каталог</a>
+                    <a href="about.html" class="footer__wrap__column_navigation__item footer-link-hover">о нас</a>
+                    <a href="index.html#delivery-payments" class="menu-item footer__wrap__column_navigation__item footer-link-hover">доставка</a>
+                    <a href="index.html#contacts" class="menu-item footer__wrap__column_navigation__item footer-link-hover">контакты</a>
+                    <a href="catalog.html" class="footer__wrap__column_navigation__item _red footer-link-hover">распродажа</a>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_company-info">
+                    <div class="footer__wrap__column_company-info__block">
+                        <h4 class="footer__wrap__column_company-info__title">наш адрес</h4>
+                        <p class="footer__wrap__column_company-info__text">г. Москва</p>
+                    </div>
+                    <div class="footer__wrap__column_company-info__block">
+                        <h4 class="footer__wrap__column_company-info__title">наши контакты:</h4>
+                        <a href="tel:89671467000" class="footer__wrap__column_company-info__block__tel footer-link-hover">8 967 146-70-00</a>
+                        <a href="mailto:test@gmail.com" class="footer__wrap__column_company-info__block__mail footer-link-hover">Почта: почта@mail.ru</a>
+                    </div>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_btn">
+                    <a href="catalog.html" class="btn-red">каталог</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно обратного зовнка -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modalCloseBtn" class="modal-close"><img src="img/icons/modal-close-icon.svg" alt="X"></span>
+            <h2 class="section__title section__title_modal">закажите обратный звонок</h2>
+            <form action="#" class="modal-content__container">
+                <div class="modal__input__wrap">
+                    <span class="modal__input__wrap__number num-ellipse">1</span>
+                    <input class="modal__input" type="text" name="user_name" placeholder="Ваше имя">
+                </div>
+                <div class="modal__input__wrap">
+                    <span class="modal__input__wrap__number num-ellipse">2</span>
+                    <input class="modal__input" type="tel" name="user_phone" placeholder="Номер телефона">
+                </div>
+                <button type="submit" class="btn-red modal__btn">отправить</button>
+                <p class="modal__policy-text">Соглашаюсь на обработку персональных данных</p>
+            </form>
+            
+        </div>
+    </div>
+
+    
+
+
+    
+
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

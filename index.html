@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva Global - автомобильные EVA Коврики</title>
+    
+    <!-- swiper-js slider  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+
+    <!-- main css files  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexibility.css">
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="favicon-32x32.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Мобильное меню  -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__column mobile-menu__column_one">
+            <a href="index.html" class="mobile-menu__column_one__item active">главная</a>
+            <a href="index.html#benefits" class="mobile-menu__column_one__item menu-item">преимущества</a>
+            <a href="index.html#constructor" class="mobile-menu__column_one__item menu-item">конструктор</a>
+            <a href="catalog.html" class="mobile-menu__column_one__item">каталог</a>
+            <a href="about.html" class="mobile-menu__column_one__item">о нас</a>
+            <a href="index.html#delivery-payments" class="mobile-menu__column_one__item menu-item">доставка</a>
+            <a href="index.html#contacts" class="mobile-menu__column_one__item menu-item">контакты</a>
+            <a href="catalog.html" class="mobile-menu__column_one__item menu-item _red">распродажа</a>
+        </div>
+        <div class="mobile-menu__column mobile-menu__column_two">
+            <a href="tel:89671467000" class="mobile-menu__column_two__tel">8 967 146-70-00</a>
+            <a href="#" class="mobile-menu__column_two__link">вконтакте</a>
+            <a href="#" class="mobile-menu__column_two__link">whatsapp</a>
+            <a href="index.html#contacts" class="mobile-menu__column_two__more-soc menu-item">еще контакты</a>
+        </div>
+        <div class="mobile-menu__column mobile-menu__column_three">
+            <p class="mobile-menu__column_three__city">г. Москва</p>
+        </div>
+    </div>
+    <!-- Кнопка скролла наверх для мобилок  -->
+    <button id="scrollToTopButton" class="scroll-to-top-button"><img src="img/icons/arrow-top.svg" alt="&#8593;"></button>
+    <!-- Фиксированная шапка  -->
+    <div class="header fixed-header">
+        <div class="container">
+            <nav class="header-menu">
+                <div class="header-menu__logo-and-menu-block">
+                    <button class="mobile__btn">
+                        <img src="img/icons/menu-burger-icon.svg" alt="Меню">
+                    </button>
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="Eva Global">
+                    </a>
+                    <button class="header__tel-link openModal">
+                        <img src="img/icons/tel-icon.svg" alt="Позвонить">
+                    </button>
+                </div>
+                <ul class="header-menu__list _desktop">
+                    <li class="header-menu__list__item active"><a href="index.html">главная</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#benefits">преимущества</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#constructor">конструктор</a></li>
+                    <li class="header-menu__list__item"><a href="catalog.html">каталог</a></li>
+                    <li class="header-menu__list__item"><a href="about.html">о нас</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#delivery-payments">доставка</a></li>
+                    <li class="header-menu__list__item _red"><a href="catalog.html">распродажа</a></li>
+                </ul>
+                <button class="header__btn openModal">обратный звонок</button>
+            </nav>
+        </div>
+    </div>
+    <!-- Статичная шапка  -->
+    <header class="header static-header">
+        <div class="container">
+            <nav class="header-menu">
+                <div class="header-menu__logo-and-menu-block">
+                    <button class="mobile__btn">
+                        <img src="img/icons/menu-burger-icon.svg" alt="Меню">
+                    </button>
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="Eva Global">
+                    </a>
+                    <button class="header__tel-link openModal">
+                        <img src="img/icons/tel-icon.svg" alt="Позвонить">
+                    </button>
+                </div>
+                <ul class="header-menu__list _desktop">
+                    <li class="header-menu__list__item active"><a href="index.html">главная</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#benefits">преимущества</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#constructor">конструктор</a></li>
+                    <li class="header-menu__list__item"><a href="catalog.html">каталог</a></li>
+                    <li class="header-menu__list__item"><a href="about.html">о нас</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#delivery-payments">доставка</a></li>
+                    <li class="header-menu__list__item _red"><a href="catalog.html">распродажа</a></li>
+                </ul>
+                <button class="header__btn openModal">обратный звонок</button>
+            </nav>
+        </div>
+    </header>
+    <section class="offer">
+        <div class="container">
+            <div class="offer-top offer-content">
+                <p class="offer-top__address">г. Москва</p>
+                <div class="offer-top__contacts">
+                    <a href="#" class="offer-top__contacts__social-link">вконтакте</a>
+                    <a href="#" class="offer-top__contacts__social-link">whatsapp</a>
+                    <a href="tel:89671467000" class="offer-top__contacts__phone-link">8 967 146-70-00</a>
+                    <a href="index.html#contacts" class="offer-top__contacts__more-social menu-item">еще контакты</a>
+                </div>
+            </div>
+            <div class="offer-main offer-content">
+                <div class="offer-main__usp-item">комплект ковриков <strong>от 1750 ₽</strong></div>
+                <h1 class="offer-main__title">автомобильные<br><span class="span-blue">EVA Коврики</span></h1>
+                <div class="offer-main__usp-wrap">
+                    <div class="offer-main__usp-wrap__block__container">
+                        <div class="offer-main__usp-wrap__block">
+                            <span class="offer-main__usp-wrap__block__item">—  Изготовление от 1 часа</span>
+                            <span class="offer-main__usp-wrap__block__item">—  Гарантия 1 год</span>
+                            <span class="offer-main__usp-wrap__block__item">—  Доставка по всей России</span>
+                            <a href="catalog.html" class="offer-main__usp-wrap__block__btn btn-red">каталог</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section__title section__title_benefits">Преимущества Еvа ковриков</h2>
+            <div class="benefits-wrap__block">
+                <div class="benefits-wrap__block__item--wrap">
+                    <span class="benefits-wrap__block__item__number _clip num-ellipse">1</span>
+                    <div class="benefits-wrap__block__item _clip">
+                        <p class="benefits-wrap__block__item__text">Лекало снятые <strong>в ручную с авто</strong><br> и доведенные до идеала</p>
+                    </div>
+                </div>
+                
+                <div class="benefits-wrap__block__item--wrap">
+                    <span class="benefits-wrap__block__item__number _clip num-ellipse">2</span>
+                    <div class="benefits-wrap__block__item _clip">
+                        <p class="benefits-wrap__block__item__text"><strong>Качественная формовка</strong><br> ковриков с Бортами</p>
+                    </div>
+                </div>
+                <div class="benefits-wrap__block__item--wrap">
+                    <span class="benefits-wrap__block__item__number _clip num-ellipse">3</span>
+                    <div class="benefits-wrap__block__item _clip">
+                        <p class="benefits-wrap__block__item__text"><strong>Максимальное покрытие</strong><br> контура пола</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-second _full-w">
+            <div class="benefits-wrap__img-block">
+                <img src="img/benefits-img.jpg" alt="Преимущества Еvа ковриков">
+            </div>
+        </div>
+        
+
+        <div class="container">
+            <div class="benefits-wrap__block">
+                <div class="benefits-wrap__block__item--wrap">
+                    <span class="benefits-wrap__block__item__number num-ellipse">4</span>
+                    <div class="benefits-wrap__block__item">
+                        <p class="benefits-wrap__block__item__text"><strong>Огромная палитра</strong> цветов<br>всегда в наличии</p>
+                    </div>
+                </div>
+                
+                <div class="benefits-wrap__block__item--wrap">
+                    <span class="benefits-wrap__block__item__number num-ellipse">5</span>
+                    <div class="benefits-wrap__block__item">
+                        <p class="benefits-wrap__block__item__text"><strong>Штатные</strong> крепления</p>
+                    </div>
+                </div>
+
+                <div class="benefits-wrap__block__item--wrap">
+                    <span class="benefits-wrap__block__item__number num-ellipse">6</span>
+                    <div class="benefits-wrap__block__item">
+                        <p class="benefits-wrap__block__item__text"><strong>Отечественный материал</strong><br>высокой плотности</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="constructor" class="constructor">
+        <div class="container">
+            <h2 class="section__title">конструктор</h2>
+            <p class="section__text section__text_constructor">Сделайте несколько простых шагов и соберите свой идеальный ева коврик</p>
+            <div class="constructor-wrap">
+                <div class="constructor-wrap__result--wrap">
+                    <div class="constructor-wrap__result">
+                        <div class="constructor-wrap__result__cant colorCantBlack"></div>
+                        <div class="constructor-wrap__result__body colorBlack"></div>
+                    </div>
+                    <p class="constructor-wrap__result__text">Пример вашего индивидуального сочетания EVA коврика</p>
+                </div>
+                
+
+                <form id="carForm" action="#" class="constructor-wrap__options">
+                    <div class="constructor-wrap__options__item constructor-wrap__options__item_select">
+                        <span class="num-ellipse">1</span>
+                        <div class="custom-select car-mark-select" data-input-name="car_mark">
+                            <div class="select-selected">Выберете марку автомобиля</div>
+                            <div class="select-items select-hide">
+                                <div class="select-items__item" data-value="car_mark1" data-label="Опция 1">Опция 1</div>
+                                <div class="select-items__item" data-value="car_mark2" data-label="Опция 2">Опция 2</div>
+                                <div class="select-items__item" data-value="car_mark3" data-label="Опция 3">Опция 3</div>
+                                <div class="select-items__item" data-value="car_mark4" data-label="Опция 4">Опция 4</div>
+                                <div class="select-items__item" data-value="car_mark5" data-label="Опция 5">Опция 5</div>
+                                <div class="select-items__item" data-value="car_mark6" data-label="Опция 6">Опция 6</div>
+                                <div class="select-items__item" data-value="car_mark7" data-label="Опция 7">Опция 7</div>
+                                <div class="select-items__item" data-value="car_mark8" data-label="Опция 8">Опция 8</div>
+                                <div class="select-items__item" data-value="car_mark9" data-label="Опция 9">Опция 9</div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="car_mark" value="">
+                    </div>
+
+                    <div class="constructor-wrap__options__item constructor-wrap__options__item_select">
+                        <span class="num-ellipse">2</span>
+                        <div class="custom-select car-model-select" data-input-name="car_model">
+                            <div class="select-selected">Выберете модель автомобиля</div>
+                            <div class="select-items select-hide">
+                                <div class="select-items__item" data-value="car_model1" data-label="Модель 1">Модель 1</div>
+                                <div class="select-items__item" data-value="car_model2" data-label="Модель 2">Модель 2</div>
+                                <div class="select-items__item" data-value="car_model3" data-label="Модель 3">Модель 3</div>
+                                <div class="select-items__item" data-value="car_model4" data-label="Модель 4">Модель 4</div>
+                                <div class="select-items__item" data-value="car_model5" data-label="Модель 5">Модель 5</div>
+                                <div class="select-items__item" data-value="car_model6" data-label="Модель 6">Модель 6</div>
+                                <div class="select-items__item" data-value="car_model7" data-label="Модель 7">Модель 7</div>
+                                <div class="select-items__item" data-value="car_model8" data-label="Модель 8">Модель 8</div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="car_model" value="">
+                    </div>
+
+                    
+                    <!-- Выбор цвета коврика ПК  -->
+                    <div class="constructor-wrap__options__item _desktop constructor-wrap__options__item_colors">
+                        <span class="num-ellipse">3</span>
+                        <div class="constructor-wrap__options__item_colors__block">
+                            <p class="constructor-wrap__options__item_colors__block__title">Выберете цвет коврика</p>
+                            <div class="constructor-wrap__options__item_colors__block__wrap">
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _black" for="colorBlack"></label>
+                                    <input class="radio color-btn" data-color="colorBlack" type="radio" id="colorBlack" name="colorBody" value="Черный" checked>
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _peachy" for="colorPeachy"></label>
+                                    <input class="radio color-btn" data-color="colorPeachy" type="radio" id="colorPeachy" name="colorBody" value="Красный">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _darken-gray" for="colorDarkenGray"></label>
+                                    <input class="radio color-btn" data-color="colorDarkenGray" type="radio" id="colorDarkenGray" name="colorBody" value="Серый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _purple" for="colorPurple"></label>
+                                    <input class="radio color-btn" data-color="colorPurple" type="radio" id="colorPurple" name="colorBody" value="Фиолетовый">
+                                    <span class="custom-radio"></span>
+                                </div>
+        
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _orange" for="colorOrange"></label>
+                                    <input class="radio color-btn" data-color="colorOrange" type="radio" id="colorOrange" name="colorBody" value="Оранжевый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _light-green" for="colorLightGreen"></label>
+                                    <input class="radio color-btn" data-color="colorLightGreen" type="radio" id="colorLightGreen" name="colorBody" value="Зеленый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _dark-green" for="colorDarkGreen"></label>
+                                    <input class="radio color-btn" data-color="colorDarkGreen" type="radio" id="colorDarkGreen" name="colorBody" value="Темно-зеленый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _blue" for="colorBlue"></label>
+                                    <input class="radio color-btn" data-color="colorBlue" type="radio" id="colorBlue" name="colorBody" value="Синий">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _light-brownish-gray" for="colorLightBrownishGray"></label>
+                                    <input class="radio color-btn" data-color="colorLightBrownishGray" type="radio" id="colorLightBrownishGray" name="colorBody" value="Коричневый">
+                                    <span class="custom-radio"></span>
+                                </div>
+        
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _light-beige" for="colorLightBeige"></label>
+                                    <input class="radio color-btn" data-color="colorLightBeige" type="radio" id="colorLightBeige" name="colorBody" value="Бежевый">
+                                    <span class="custom-radio"></span>
+                                </div>
+        
+        
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _dark-brown" for="colorDarkBrown"></label>
+                                    <input class="radio color-btn" data-color="colorDarkBrown" type="radio" id="colorDarkBrown" name="colorBody" value="Бордовый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _white" for="colorWhite"></label>
+                                    <input class="radio color-btn" data-color="colorWhite" type="radio" id="colorWhite" name="colorBody" value="Белый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _yellow" for="colorYellow"></label>
+                                    <input class="radio color-btn" data-color="colorYellow" type="radio" id="colorYellow" name="colorBody" value="Желтый">
+                                    <span class="custom-radio"></span>
+                                </div>
+        
+        
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _dark-blue" for="colorDarkBlue"></label>
+                                    <input class="radio color-btn" data-color="colorDarkBlue" type="radio" id="colorDarkBlue" name="colorBody" value="Темно-синий">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Выбор цвета коврика мобильные  -->
+                    <div class="constructor-wrap__options__item _mobile constructor-wrap__options__item_select">
+                        <span class="num-ellipse">3</span>
+                        <div class="custom-select car-model-select" data-input-name="body_color">
+                            <div class="select-selected">Выберете цвет коврика</div>
+                            <div class="select-items select-hide">
+
+                                <div class="select-items__item color-btn" data-value="colorBlack" id="colorBlack" data-label="Черный" data-color="colorBlack">
+                                    <span>Черный</span>
+                                    <label class="color-option _black" for="colorBlack"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorPeachy" id="colorPeachy" data-label="Красный" data-color="colorPeachy">
+                                    <span>Красный</span>
+                                    <label class="color-option _peachy" for="colorPeachy"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorDarkenGray" id="colorDarkenGray" data-label="Серый" data-color="colorDarkenGray">
+                                    <span>Серый</span>
+                                    <label class="color-option _darken-gray" for="colorDarkenGray"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorPurple" id="colorPurple" data-label="Фиолетовый" data-color="colorPurple">
+                                    <span>Фиолетовый</span>
+                                    <label class="color-option _purple" for="colorPurple"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorOrange" id="colorOrange" data-label="Оранжевый" data-color="colorOrange">
+                                    <span>Оранжевый</span>
+                                    <label class="color-option _orange" for="colorOrange"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorLightGreen" id="colorLightGreen" data-label="Зеленый" data-color="colorLightGreen">
+                                    <span>Зеленый</span>
+                                    <label class="color-option _light-green" for="colorLightGreen"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorDarkGreen" id="colorDarkGreen" data-label="Темно-зеленый" data-color="colorDarkGreen">
+                                    <span>Темно-зеленый</span>
+                                    <label class="color-option _dark-green" for="colorDarkGreen"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorBlue" id="colorBlue" data-label="Синий" data-color="colorBlue">
+                                    <span>Синий</span>
+                                    <label class="color-option _blue" for="colorBlue"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorLightBrownishGray" id="colorLightBrownishGray" data-label="Коричневый" data-color="colorLightBrownishGray">
+                                    <span>Коричневый</span>
+                                    <label class="color-option _light-brownish-gray" for="colorLightBrownishGray"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorLightBeige" id="colorLightBeige" data-label="Бежевый" data-color="colorLightBeige">
+                                    <span>Бежевый</span>
+                                    <label class="color-option _light-beige" for="colorLightBeige"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorDarkBrown" id="colorDarkBrown" data-label="Бордовый" data-color="colorDarkBrown">
+                                    <span>Бордовый</span>
+                                    <label class="color-option _dark-brown" for="colorDarkBrown"></label>
+                                </div>
+                                
+                                <div class="select-items__item color-btn" data-value="colorWhite" id="colorWhite" data-label="Белый" data-color="colorWhite">
+                                    <span>Белый</span>
+                                    <label class="color-option _white" for="colorWhite"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorYellow" id="colorYellow" data-label="Желтый" data-color="colorYellow">
+                                    <span>Желтый</span>
+                                    <label class="color-option _yellow" for="colorYellow"></label>
+                                </div>
+
+                                <div class="select-items__item color-btn" data-value="colorDarkBlue" id="colorDarkBlue" data-label="Темно-синий" data-color="colorDarkBlue">
+                                    <span>Темно-синий</span>
+                                    <label class="color-option _dark-blue" for="colorDarkBlue"></label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <input type="hidden" name="body_color" value="colorBlack">
+                    </div>
+
+                    
+                    <!-- Выбор цвета канта ПК  -->
+                    <div class="constructor-wrap__options__item _desktop constructor-wrap__options__item_colors">
+                        <span class="num-ellipse">4</span>
+                        <div class="constructor-wrap__options__item_colors__block">
+                            <p class="constructor-wrap__options__item_colors__block__title">Выберете цвет канта</p>
+                            <div class="constructor-wrap__options__item_colors__block__wrap">
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-black" for="colorCantBlack"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantBlack" type="radio" id="colorCantBlack" name="colorCant" value="Черный" checked>
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-chartreuse" for="colorCantСhartreuse"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantСhartreuse" type="radio" id="colorCantСhartreuse" name="colorCant" value="Ярко-зелёный">
+                                    <span class="custom-radio"></span>
+                                </div>
+                                
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-feldgrau" for="colorCantFeldgrau"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantFeldgrau" type="radio" id="colorCantFeldgrau" name="colorCant" value="Темно-зелёный">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-light-yellow" for="colorCantLightYellow"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantLightYellow" type="radio" id="colorCantLightYellow" name="colorCant" value="Салатовый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-yellow" for="colorCantYellow"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantYellow" type="radio" id="colorCantYellow" name="colorCant" value="Желтый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-orange" for="colorCantOrange"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantOrange" type="radio" id="colorCantOrange" name="colorCant" value="Оранжевый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-red" for="colorCantRed"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantRed" type="radio" id="colorCantRed" name="colorCant" value="Красный">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-maroon" for="colorCantMaroon"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantMaroon" type="radio" id="colorCantMaroon" name="colorCant" value="Бордовый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-dark-brown" for="colorCantDarkBrown"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantDarkBrown" type="radio" id="colorCantDarkBrown" name="colorCant" value="Темно-бордовый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-purple" for="colorCantPurple"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantPurple" type="radio" id="colorCantPurple" name="colorCant" value="Фиолетовый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-light-black" for="colorCantLightBlack"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantLightBlack" type="radio" id="colorCantLightBlack" name="colorCant" value="Темно-синий">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-dark-blue" for="colorCantDarkBlue"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantDarkBlue" type="radio" id="colorCantDarkBlue" name="colorCant" value="Синий">
+                                    <span class="custom-radio"></span>
+                                </div>
+                                
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-blue" for="colorCantBlue"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantBlue" type="radio" id="colorCantBlue" name="colorCant" value="Ярко-синий">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-lilac" for="colorCantLilac"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantLilac" type="radio" id="colorCantLilac" name="colorCant" value="Лиловый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-celestial" for="colorCantCelestial"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantCelestial" type="radio" id="colorCantCelestial" name="colorCant" value="Голубой">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-brown" for="colorCantBrown"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantBrown" type="radio" id="colorCantBrown" name="colorCant" value="Коричневый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-yellowish-gray" for="colorCantYellowishGray"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantYellowishGray" type="radio" id="colorCantYellowishGray" name="colorCant" value="Бежевый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-granite-gray" for="colorCantGraniteGray"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantGraniteGray" type="radio" id="colorCantGraniteGray" name="colorCant" value="Темно-серый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-pearlescent-light-gray" for="colorCantPearlescentLightGray"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantPearlescentLightGray" type="radio" id="colorCantPearlescentLightGray" name="colorCant" value="Светло-серый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                <div class="constructor-wrap__options__item__color-option">
+                                    <label class="color-option _cant-timber-wolf" for="colorCantTimberWolf"></label>
+                                    <input class="radio color-cant-btn" data-color="colorCantTimberWolf" type="radio" id="colorCantTimberWolf" name="colorCant" value="Белый">
+                                    <span class="custom-radio"></span>
+                                </div>
+
+                                
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Выбор цвета канта мобильные  -->
+                    <div class="constructor-wrap__options__item _mobile constructor-wrap__options__item_select">
+                        <span class="num-ellipse">4</span>
+                        <div class="custom-select car-model-select" data-input-name="cant_color">
+                            <div class="select-selected">Выберете цвет канта</div>
+                            <div class="select-items select-hide">
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantBlack" id="colorCantBlack" data-label="Черный" data-color="colorCantBlack">
+                                    <span>Черный</span>
+                                    <label class="color-option _cant-black" for="colorCantBlack"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantСhartreuse" id="colorCantСhartreuse" data-label="Ярко-зелёный" data-color="colorCantСhartreuse">
+                                    <span>Ярко-зелёный</span>
+                                    <label class="color-option _cant-chartreuse" for="colorCantСhartreuse"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantFeldgrau" id="colorCantFeldgrau" data-label="Темно-зелёный" data-color="colorCantFeldgrau">
+                                    <span>Темно-зелёный</span>
+                                    <label class="color-option _cant-feldgrau" for="colorCantFeldgrau"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantLightYellow" id="colorCantLightYellow" data-label="Салатовый" data-color="colorCantLightYellow">
+                                    <span>Салатовый</span>
+                                    <label class="color-option _cant-light-yellow" for="colorCantLightYellow"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantYellow" id="colorCantYellow" data-label="Желтый" data-color="colorCantYellow">
+                                    <span>Желтый</span>
+                                    <label class="color-option _cant-yellow" for="colorCantYellow"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantOrange" id="colorCantOrange" data-label="Оранжевый" data-color="colorCantOrange">
+                                    <span>Оранжевый</span>
+                                    <label class="color-option _cant-orange" for="colorCantOrange"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantRed" id="colorCantRed" data-label="Красный" data-color="colorCantRed">
+                                    <span>Красный</span>
+                                    <label class="color-option _cant-red" for="colorCantRed"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantMaroon" id="colorCantMaroon" data-label="Бордовый" data-color="colorCantMaroon">
+                                    <span>Бордовый</span>
+                                    <label class="color-option _cant-maroon" for="colorCantMaroon"></label>
+                                </div>
+                                
+                                <div class="select-items__item color-cant-btn" data-value="colorCantDarkBrown" id="colorCantDarkBrown" data-label="Темно-бордовый" data-color="colorCantDarkBrown">
+                                    <span>Темно-бордовый</span>
+                                    <label class="color-option _cant-dark-brown" for="colorCantDarkBrown"></label>
+                                </div>
+                                
+                                <div class="select-items__item color-cant-btn" data-value="colorCantPurple" id="colorCantPurple" data-label="Фиолетовый" data-color="colorCantPurple">
+                                    <span>Фиолетовый</span>
+                                    <label class="color-option _cant-purple" for="colorCantPurple"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantLightBlack" id="colorCantLightBlack" data-label="Темно-синий" data-color="colorCantLightBlack">
+                                    <span>Темно-синий</span>
+                                    <label class="color-option _cant-light-black" for="colorCantLightBlack"></label>
+                                </div>
+                                
+                                <div class="select-items__item color-cant-btn" data-value="colorCantDarkBlue" id="colorCantDarkBlue" data-label="Синий" data-color="colorCantDarkBlue">
+                                    <span>Синий</span>
+                                    <label class="color-option _light-green" for="colorCantDarkBlue"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantBlue" id="colorCantBlue" data-label="Ярко-синий" data-color="colorCantBlue">
+                                    <span>Ярко-синий</span>
+                                    <label class="color-option _cant-blue" for="colorCantBlue"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantLilac" id="colorCantLilac" data-label="Лиловый" data-color="colorCantLilac">
+                                    <span>Лиловый</span>
+                                    <label class="color-option _cant-lilac" for="colorCantLilac"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantCelestial" id="colorCantCelestial" data-label="Голубой" data-color="colorCantCelestial">
+                                    <span>Голубой</span>
+                                    <label class="color-option _cant-celestial" for="colorCantCelestial"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantBrown" id="colorCantBrown" data-label="Коричневый" data-color="colorCantBrown">
+                                    <span>Коричневый</span>
+                                    <label class="color-option _cant-brown" for="colorCantBrown"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantYellowishGray" id="colorCantYellowishGray" data-label="Бежевый" data-color="colorCantYellowishGray">
+                                    <span>Бежевый</span>
+                                    <label class="color-option _cant-yellowish-gray" for="colorCantYellowishGray"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantGraniteGray" id="colorCantGraniteGray" data-label="Темно-серый" data-color="colorCantGraniteGray">
+                                    <span>Темно-серый</span>
+                                    <label class="color-option _cant-granite-gray" for="colorCantGraniteGray"></label>
+                                </div>
+
+                                <div class="select-items__item color-cant-btn" data-value="colorCantTimberWolf" id="colorCantTimberWolf" data-label="Светло-серый" data-color="colorCantTimberWolf">
+                                    <span>Светло-серый</span>
+                                    <label class="color-option _cant-timber-wolf" for="colorCantTimberWolf"></label>
+                                </div>
+
+                                
+                                
+                            </div>
+                        </div>
+                        <input type="hidden" name="cant_color" value="colorCantBlack">
+                    </div>
+
+
+                    <button type="button" class="btn-red constructor-wrap__options__btn openModalConstructorBtn">заказать</button>
+                    <div id="modalConstructor" class="modal">
+                        <div class="modal-content">
+                            <span id="modalConstructorClose" class="modal-close"><img src="img/icons/modal-close-icon.svg" alt="X"></span>
+                            <h2 class="section__title section__title_modal">закажите обратный звонок</h2>
+                            <div class="modal-content__container">
+                                <div class="modal__input__wrap">
+                                    <span class="modal__input__wrap__number num-ellipse">1</span>
+                                    <input class="modal__input" type="text" name="user_name" placeholder="Ваше имя">
+                                </div>
+                                <div class="modal__input__wrap">
+                                    <span class="modal__input__wrap__number num-ellipse">2</span>
+                                    <input class="modal__input" type="tel" name="user_phone" placeholder="Номер телефона">
+                                </div>
+                                <button type="submit" class="btn-red modal__btn">отправить</button>
+                                <p class="modal__policy-text">Соглашаюсь на обработку персональных данных</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <section class="car-mats-categoryes">
+        <div class="container-second">
+            <h2 class="section__title">варианты наших ева ковриков</h2>
+            <p class="section__text section__text_car-mats-categoryes">Мы предлагаем различные варианты ева ковриков, в том силе с бортами и без</p>
+        </div>
+        <div class="container-slider">
+            <div class="car-mats-categoryes__slider deafult-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">с бортами<br><span>2300 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/with-sides/with-sides-1.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Только передние eva коврики в салон с бортами</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+                    
+
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">с бортами<br><span>3500 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/with-sides/with-sides-4.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Комплект ковриков в салон c бортами + перемычка</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+
+
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">с бортами<br><span>2000 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/with-sides/with-sides-3.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Только задние eva коврики в салон с бортами</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+                    
+
+                    
+
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">с бортами<br><span>5800 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/with-sides/with-sides-5.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Комплект ковриков в салон с бортами + багажник</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+                
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <div class="car-mats-categoryes__slider deafult-slider swiper">
+
+                <div class="swiper-wrapper">
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">без бортов<br><span>1750 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/without-sides/without-sides-1.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Только передние eva коврики в салон без бортов</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+
+
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">без бортов<br><span>2400 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/without-sides/without-sides-4.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Комплект ковриков в салон без бортов + перемычка</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+
+
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">без бортов<br><span>1200 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/without-sides/without-sides-3.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Только задние eva коврики в салон без бортов</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+                    
+                    
+
+                    <div class="car-mats-categoryes__slider__item swiper-slide">
+                        <p class="car-mats-categoryes__slider__item__price-tag">без бортов<br><span>4700 ₽</span></p>
+                        <div class="car-mats-categoryes__slider__item__img-wrap">
+                            <img src="img/car-carpets-img/without-sides/without-sides-5.png" alt="123">
+                        </div>
+                        <p class="car-mats-categoryes__slider__item__text">Комплект ковриков в салон без бортов + багажник</p>
+                        <a href="catalog.html" class="btn-red car-mats-categoryes__slider__item__btn">каталог</a>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+            
+        
+    </section>
+    <section class="examples-our-work">
+        <div class="container-second">
+            <h2 class="section__title">примеры наших работ</h2>
+            <p class="section__text section__text_examples-our-work">Все наши заказы мы выполняем с максимальной отдачей, внимательностью и аккуратностью, чтобы каждый из вас почувствовал, а главное увидел, высокое качество нашей работы</p>
+
+            <div class="examples-our-work__wrap">
+                <div class="examples-our-work__wrap__block-one">
+                    <a data-fslightbox="gallery-examples-our-work" href="img/examples-our-work-img/examples-our-work-block1-img-1.jpg" class="examples-our-work__wrap__block__img examples-our-work__wrap__block-one__img-one">
+                        <img src="img/examples-our-work-img/examples-our-work-block1-img-1.jpg" alt="123">
+                    </a>
+                    <div class="examples-our-work__wrap__block-one__info">
+                        <p class="examples-our-work__wrap__block-one__info__text">Больше наших работы вы можете посмотреть в нашей <strong>группе в ВК</strong></p>
+                        <a href="#" class="btn-blue examples-our-work__wrap__block-one__info__btn"><span>смотреть еще</span><img src="img/icons/btn-arrow-right.svg" alt=">"></a>
+                    </div>
+                </div>
+                <div class="examples-our-work__wrap__block-two">
+                    <a data-fslightbox="gallery-examples-our-work" href="img/examples-our-work-img/examples-our-work-block2-img-1.jpg" class="examples-our-work__wrap__block__img examples-our-work__wrap__block-two__img-one">
+                        <img src="img/examples-our-work-img/examples-our-work-block2-img-1.jpg" alt="123">
+                    </a>
+                    <a data-fslightbox="gallery-examples-our-work" href="img/examples-our-work-img/examples-our-work-block2-img-2.jpg" class="examples-our-work__wrap__block__img examples-our-work__wrap__block-two__img-two">
+                        <img src="img/examples-our-work-img/examples-our-work-block2-img-2.jpg" alt="123">
+                    </a>
+                    <div class="examples-our-work__wrap__block-one__info _mobile">
+                        <p class="examples-our-work__wrap__block-one__info__text">Больше наших работы вы можете посмотреть в нашей <strong>группе в ВК</strong></p>
+                        <a href="#" class="btn-blue examples-our-work__wrap__block-one__info__btn"><span>смотреть еще</span><img src="img/icons/btn-arrow-right.svg" alt=">"></a>
+                    </div>
+                </div>
+                <div class="examples-our-work__wrap__block-three">
+                    <p class="examples-our-work__wrap__block-three__text">Нажмите на фото, чтобы его увеличить</p>
+                    <a data-fslightbox="gallery-examples-our-work" href="img/examples-our-work-img/examples-our-work-block3-img-1.jpg" class="examples-our-work__wrap__block__img examples-our-work__wrap__block-three__img-one">
+                        <img src="img/examples-our-work-img/examples-our-work-block3-img-1.jpg" alt="123">
+                    </a>
+                    <a data-fslightbox="gallery-examples-our-work" href="img/examples-our-work-img/examples-our-work-block3-img-2.jpg" class="examples-our-work__wrap__block__img examples-our-work__wrap__block-three__img-two">
+                        <img src="img/examples-our-work-img/examples-our-work-block3-img-2.jpg" alt="123">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="additional-accessories">
+        <div class="container">
+            <h2 class="section__title">Дополнительные аксессуары</h2>
+            <p class="section__text">Широкий выбор аксессуаров для вашего автомобиля</p>
+        </div>
+
+        
+        <!-- На мобилках меньше  -->
+        <div class="additional-accessories__wrap__item_more additional-accessories__wrap__item_more_mobile _full-w">
+            <h3 class="additional-accessories__wrap__item__title_more">ПОЧУВСТВУЙ КОМФОРТ ВМЕСТЕ С нами!</h3>
+            <p class="additional-accessories__wrap__item__text_more">
+                В нашем магазине представлены не только EVA коврики, <strong>а также практичные сумки-органайзеры и накидки</strong> на все сидения вашего автомобиля.
+                <br><br>
+                Переходите в каталог, с помощью конструктора собирайте нужную вам накидку или сумку и <strong>скорее заказывайте!</strong>
+            </p>
+            <a href="catalog.html" class="additional-accessories__wrap__item__btn_more">
+                <img src="img/icons/arrow-right-black.svg" alt=">">
+            </a>
+        </div>
+        
+
+        <div class="container-slider _column-reverse">
+
+            <div class="additional-accessories__wrap accessoriesSlider">
+                <div class="swiper-wrapper">
+                    <!-- На пк  -->
+                    <div class="additional-accessories__wrap__item_more additional-accessories__wrap__item_more_descktop swiper-slide">
+                        <h3 class="additional-accessories__wrap__item__title_more">ПОЧУВСТВУЙ КОМФОРТ ВМЕСТЕ С нами!</h3>
+                        <p class="additional-accessories__wrap__item__text_more">
+                            В нашем магазине представлены не только EVA коврики, <strong>а также практичные сумки-органайзеры и накидки</strong> на все сидения вашего автомобиля.
+                            <br><br>
+                            Переходите в каталог, с помощью конструктора собирайте нужную вам накидку или сумку и <strong>скорее заказывайте!</strong>
+                        </p>
+                        <a href="catalog.html" class="additional-accessories__wrap__item__btn_more">
+                            <img src="img/icons/arrow-right-black.svg" alt=">">
+                        </a>
+                    </div>
+
+                    <div class="additional-accessories__wrap__item swiper-slide">
+                        <div class="additional-accessories__wrap__item__img-wrap">
+                            <img src="img/additional-accessories-img/additional-accessories-img-seat-cover.jpg" alt="123">
+                        </div>
+                        <p class="additional-accessories__wrap__item__text">Велюровая накидка на сиднение</p>
+                        <span class="additional-accessories__wrap__item__price-tag"><strong>3500₽</strong></span>
+                        <a href="catalog.html" class="btn-red additional-accessories__wrap__item__btn">каталог</a>
+                    </div>
+
+                    <div class="additional-accessories__wrap__item swiper-slide">
+                        <div class="additional-accessories__wrap__item__img-wrap">
+                            <img src="img/additional-accessories-img/additional-accessories-img-organaizer.jpg" alt="123">
+                        </div>
+                        <p class="additional-accessories__wrap__item__text">Сумка-органайзер в багажник</p>
+                        <span class="additional-accessories__wrap__item__price-tag"><strong>3500₽</strong></span>
+                        <a href="catalog.html" class="btn-red additional-accessories__wrap__item__btn">каталог</a>
+                    </div>
+                </div>
+
+                <div class="accessoriesSlider-swiper-button-prev"></div>
+                <div class="accessoriesSlider-swiper-button-next"></div>
+                
+                <div class="accessoriesSlider-swiper-scrollbar"></div>
+
+            </div>
+
+            <!-- На мобилках  -->
+            <div class="additional-accessories__wrap__item_more additional-accessories__wrap__item_more_mobile">
+                <h3 class="additional-accessories__wrap__item__title_more">ПОЧУВСТВУЙ КОМФОРТ ВМЕСТЕ С нами!</h3>
+                <p class="additional-accessories__wrap__item__text_more">
+                    В нашем магазине представлены не только EVA коврики, <strong>а также практичные сумки-органайзеры и накидки</strong> на все сидения вашего автомобиля.
+                    <br><br>
+                    Переходите в каталог, с помощью конструктора собирайте нужную вам накидку или сумку и <strong>скорее заказывайте!</strong>
+                </p>
+                <a href="catalog.html" class="additional-accessories__wrap__item__btn_more">
+                    <img src="img/icons/arrow-right-black.svg" alt=">">
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="feedbacks">
+        <div class="container">
+            <h2 class="section__title">отзывы наших клиентов</h2>
+            <p class="section__text">Широкий выбор аксессуаров для вашего автомобиля</p>
+            <div class="feedbacks__wrap">
+                <div class="feedbacks__wrap__item">
+                    <div class="feedbacks__wrap__item__cart feedbacks__wrap__item__cart_full-h">
+                        <div class="feedbacks__wrap__item__cart__customer-info">
+                            <img src="img/customer-1.jpg" alt="Клиент" class="feedbacks__wrap__item__cart__customer-info__img">
+                            <h3 class="feedbacks__wrap__item__cart__customer-info__name">Сергей набоков</h3>
+                        </div>
+                        <p class="feedbacks__wrap__item__cart__text">
+                            Долго искал резиновые коврики именно на мою машину. Нигде ничего не нашел похожего, даже по разборкам поездил. Полазил по сайтам всяким. Ничего. И тут вдруг нашел Duffcar. Коврики на любую машину! И на мою в том числе. Причем можно выбрать цвет ковриков, цвет окантовки и еще много чего другого!) Цены, качество, сроки – все на высшем уровне! Буду и дальше иметь с ними дело! Рекомендую.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedbacks__wrap__item">
+                    <div class="feedbacks__wrap__item__cart feedbacks__wrap__item__cart_full-h">
+                        <div class="feedbacks__wrap__item__cart__customer-info">
+                            <img src="img/customer-2.jpg" alt="Клиент" class="feedbacks__wrap__item__cart__customer-info__img">
+                            <h3 class="feedbacks__wrap__item__cart__customer-info__name">Александр Блащук</h3>
+                        </div>
+                        <p class="feedbacks__wrap__item__cart__text">
+                            Недавно купил для своего авто комплект ковриков и остался очень доволен приобретением. Очень легко очищать грязь за счет ячеистой структуры коврика. Также порадовало, что эти коврики отечественного производства, при этом высокого качества. 
+                        </p>
+                    </div>
+                </div>
+                <div class="feedbacks__wrap__item feedbacks__wrap__item_more-info-block">
+                    <div class="feedbacks__wrap__item__cart">
+                        <div class="feedbacks__wrap__item__cart__customer-info">
+                            <img src="img/customer-3.jpg" alt="Клиент" class="feedbacks__wrap__item__cart__customer-info__img">
+                            <h3 class="feedbacks__wrap__item__cart__customer-info__name">Алина Суполкина</h3>
+                        </div>
+                        <p class="feedbacks__wrap__item__cart__text">
+                            Подарила другу комплект ковриков в его новую тачку. Реакция была восторг, так как давно хотел комплект, но всё не доходили руки. Спасибо за оперативный приём заказа и быструю доставку. Работа на качество и клиента!
+                        </p>
+                    </div>
+                    <div class="feedbacks__wrap__item__more-info">
+                        <p class="feedbacks__wrap__item__more-info__text">Больше отзывов о нашей работе вы можете <strong>посмотреть здесь</strong></p>
+                        <a href="#" class="btn-blue feedbacks__wrap__item__more-info__btn">
+                            <span>смотреть еще</span>
+                            <img src="img/icons/btn-arrow-right.svg" alt=">">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="delivery-payments" class="delivery-payments">
+        <div class="container">
+            <h2 class="section__title">доставка и оплата заказа</h2>
+            <p class="section__text section__text_delivery-payments">Если вы оформляете заказ на сумму более 5000 рублей, мы отправим вам коврики бесплатно в любую точку России</p>
+        </div>
+        <div class="delivery-payments__block--wrap">
+            <div class="container">
+                <form action="#" class="delivery-payments__block">
+
+                    <div class="delivery-payments__block__item">
+                        <strong>Готовы оформить заказ?</strong><br>Заполните форму ниже и менеджер свяжется с вами для подробной консультации
+                    </div>
+
+                    <div class="delivery-payments__block__item">
+                        <span class="delivery-payments__block__item__number num-ellipse">1</span>
+                        <input class="delivery-payments__block__item__text" type="text" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="delivery-payments__block__item">
+                        <span class="delivery-payments__block__item__number num-ellipse">2</span>
+                        <input class="delivery-payments__block__item__text" type="tel" placeholder="Номер телефона">
+                    </div>
+
+                    <div class="delivery-payments__block__item">
+                        <span class="delivery-payments__block__item__number num-ellipse">3</span>
+                        <input class="delivery-payments__block__item__text" type="text" placeholder="Ваш город">
+                    </div>
+
+                    <button type="submit" class="btn-red delivery-payments__block__btn">Подтвердить заказ</button>
+                    
+
+                    <div class="delivery-payments__block__delivery-methods _desktop">
+                        <div class="delivery-payments__block__delivery-methods__item">
+                            <h3 class="delivery-payments__block__delivery-methods__item__title">Почта России</h3>
+                            <p class="delivery-payments__block__delivery-methods__item__text">
+                                <strong>Наиболее экономный вариант</strong>, при полной оплате заказа и доставки. Срок доставки: 5 – 14 дней. Отправляем заказы по предоплате 1000 рублей. Статус вашего отправления вы можете отслеживать на официальном сайте Почты России по трек-номеру.
+                            </p>
+                        </div>
+                        <div class="delivery-payments__block__delivery-methods__item">
+                            <h3 class="delivery-payments__block__delivery-methods__item__title">Курьерская служба<br>доставки СДЭК</h3>
+                            <p class="delivery-payments__block__delivery-methods__item__text"><strong>Надёжный и быстрый способ доставки</strong>. Стоимость доставки по центральной России – от 250 рублей. Точная цена зависит от месторасположения вашего города. Статус вашего отправления вы можете отслеживать на официальном сайте СДЭК по трек-номеру.</p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="container _mobilee">
+            <div class="delivery-payments__block__delivery-methods _mobile">
+                <div class="delivery-payments__block__delivery-methods__item">
+                    <h3 class="delivery-payments__block__delivery-methods__item__title">Почта России</h3>
+                    <p class="delivery-payments__block__delivery-methods__item__text">
+                        <strong>Наиболее экономный вариант</strong>, при полной оплате заказа и доставки. Срок доставки: 5 – 14 дней. Отправляем заказы по предоплате 1000 рублей. Статус вашего отправления вы можете отслеживать на официальном сайте Почты России по трек-номеру.
+                    </p>
+                </div>
+                <div class="delivery-payments__block__delivery-methods__item">
+                    <h3 class="delivery-payments__block__delivery-methods__item__title">Курьерская служба<br>доставки СДЭК</h3>
+                    <p class="delivery-payments__block__delivery-methods__item__text"><strong>Надёжный и быстрый способ доставки</strong>. Стоимость доставки по центральной России – от 250 рублей. Точная цена зависит от месторасположения вашего города. Статус вашего отправления вы можете отслеживать на официальном сайте СДЭК по трек-номеру.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <section id="contacts" class="contacts">
+        <div class="container-second">
+            <h2 class="section__title">контакты</h2>
+            <p class="section__text">Готовы ответить на любые ваши вопросы и принять заказа</p>
+            <div class="contacts__wrap">
+                <div class="contacts__wrap__map">
+                    <div id="yamap"></div>
+                </div>
+                <div class="contacts__wrap__info">
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы менеджеров:</h3>
+                        <p class="contacts__wrap__info__item__text">пн - пт 09:00-19:00 (МСК), сб - вс 09:00-18:00</p>
+                    </div>
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы отдела производства:</h3>
+                        <p class="contacts__wrap__info__item__text">пн-пт 10:00-18:00 (МСК), сб - 10:00-17:00, вс - выходной. Без обеденного перерыва.</p>
+                    </div>
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы интернет-магазина:</h3>
+                        <p class="contacts__wrap__info__item__text">Круглосуточно</p>
+                    </div>
+                    <div class="contacts__wrap__info__social">
+                        <a href="tel:89671467000" class="contacts__wrap__info__social__tel">8 967 146-70-00</a>
+                        <div class="contacts__wrap__info__social__messengers">
+                            <a href="#" class="contacts__wrap__info__social__messengers__link">вконтакте</a>
+                            <a href="#" class="contacts__wrap__info__social__messengers__link">whatsapp</a>
+                            <button class="btn-blue contacts__wrap__info__social__messengers__btn openModal">обратный звонок</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-second _mobilee">
+            <div class="contacts__hint-block">
+                <p class="contacts__hint-block__text">
+                    <strong>Все заказы, оформленные в нерабочее время</strong>, согласовываются с покупателем (по телефону, через мессенджеры или по электронной почте) <strong>на следующий рабочий день компании</strong> и передаются в производство. Датой оформления заказа является не день оплаты, <strong>а дата его подтверждения и согласования с менеджером.</strong> Учитывайте рабочие часы компании при осуществлении звонков для консультаций.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+
+                <div class="footer__wrap__column footer__wrap__column_company-links">
+                    <a href="index.html" class="footer__logo-link">
+                        <img src="img/logo-white.svg" alt="EVA GLOBAL">
+                    </a>
+                    <p class="footer__policy-text">2023 ©<br>Все права защищены</p>
+                    <a href="policy.html" target="_blank" class="footer__policy-link footer-link-hover">Политика конфиденциальности</a>
+                    <a href="partnership.html" target="_blank" class="footer__partnership-link footer-link-hover">партнерство</a>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_navigation">
+                    <a href="index.html" class="footer__wrap__column_navigation__item active footer-link-hover">главная</a>
+                    <a href="index.html#benefits" class="menu-item footer__wrap__column_navigation__item footer-link-hover">преимущества</a>
+                    <a href="index.html#constructor" class="menu-item footer__wrap__column_navigation__item footer-link-hover">конструктор</a>
+                    <a href="catalog.html" class="footer__wrap__column_navigation__item footer-link-hover">каталог</a>
+                    <a href="about.html" class="footer__wrap__column_navigation__item footer-link-hover">о нас</a>
+                    <a href="index.html#delivery-payments" class="menu-item footer__wrap__column_navigation__item footer-link-hover">доставка</a>
+                    <a href="index.html#contacts" class="menu-item footer__wrap__column_navigation__item footer-link-hover">контакты</a>
+                    <a href="catalog.html" class="footer__wrap__column_navigation__item _red footer-link-hover">распродажа</a>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_company-info">
+                    <div class="footer__wrap__column_company-info__block">
+                        <h4 class="footer__wrap__column_company-info__title">наш адрес</h4>
+                        <p class="footer__wrap__column_company-info__text">г. Москва</p>
+                    </div>
+                    <div class="footer__wrap__column_company-info__block">
+                        <h4 class="footer__wrap__column_company-info__title">наши контакты:</h4>
+                        <a href="tel:89671467000" class="footer__wrap__column_company-info__block__tel footer-link-hover">8 967 146-70-00</a>
+                        <a href="mailto:test@gmail.com" class="footer__wrap__column_company-info__block__mail footer-link-hover">Почта: почта@mail.ru</a>
+                    </div>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_btn">
+                    <a href="catalog.html" class="btn-red">каталог</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно обратного зовнка -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modalCloseBtn" class="modal-close"><img src="img/icons/modal-close-icon.svg" alt="X"></span>
+            <h2 class="section__title section__title_modal">закажите обратный звонок</h2>
+            <form action="#" class="modal-content__container">
+                <div class="modal__input__wrap">
+                    <span class="modal__input__wrap__number num-ellipse">1</span>
+                    <input class="modal__input" type="text" name="user_name" placeholder="Ваше имя">
+                </div>
+                <div class="modal__input__wrap">
+                    <span class="modal__input__wrap__number num-ellipse">2</span>
+                    <input class="modal__input" type="tel" name="user_phone" placeholder="Номер телефона">
+                </div>
+                <button type="submit" class="btn-red modal__btn">отправить</button>
+                <p class="modal__policy-text">Соглашаюсь на обработку персональных данных</p>
+            </form>
+            
+        </div>
+    </div>
+
+    
+
+
+    
+
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

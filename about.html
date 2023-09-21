@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании «Eva Global» - Eva Global - автомобильные EVA Коврики</title>
+    
+    <!-- swiper-js slider  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+
+    <!-- main css files  -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexibility.css">
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="favicon-32x32.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Мобильное меню  -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__column mobile-menu__column_one">
+            <a href="index.html" class="mobile-menu__column_one__item">главная</a>
+            <a href="index.html#benefits" class="mobile-menu__column_one__item menu-item">преимущества</a>
+            <a href="index.html#constructor" class="mobile-menu__column_one__item menu-item">конструктор</a>
+            <a href="catalog.html" class="mobile-menu__column_one__item">каталог</a>
+            <a href="about.html" class="mobile-menu__column_one__item active">о нас</a>
+            <a href="index.html#delivery-payments" class="mobile-menu__column_one__item menu-item">доставка</a>
+            <a href="index.html#contacts" class="mobile-menu__column_one__item menu-item">контакты</a>
+            <a href="catalog.html" class="mobile-menu__column_one__item menu-item _red">распродажа</a>
+        </div>
+        <div class="mobile-menu__column mobile-menu__column_two">
+            <a href="tel:89671467000" class="mobile-menu__column_two__tel">8 967 146-70-00</a>
+            <a href="#" class="mobile-menu__column_two__link">вконтакте</a>
+            <a href="#" class="mobile-menu__column_two__link">whatsapp</a>
+            <a href="index.html#contacts" class="mobile-menu__column_two__more-soc menu-item">еще контакты</a>
+        </div>
+        <div class="mobile-menu__column mobile-menu__column_three">
+            <p class="mobile-menu__column_three__city">г. Москва</p>
+        </div>
+    </div>
+    <!-- Кнопка скролла наверх для мобилок  -->
+    <button id="scrollToTopButton" class="scroll-to-top-button"><img src="img/icons/arrow-top.svg" alt="&#8593;"></button>
+    <!-- Фиксированная шапка  -->
+    <div class="header fixed-header">
+        <div class="container">
+            <nav class="header-menu">
+                <div class="header-menu__logo-and-menu-block">
+                    <button class="mobile__btn">
+                        <img src="img/icons/menu-burger-icon.svg" alt="Меню">
+                    </button>
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="Eva Global">
+                    </a>
+                    <button class="header__tel-link openModal">
+                        <img src="img/icons/tel-icon.svg" alt="Позвонить">
+                    </button>
+                </div>
+                <ul class="header-menu__list _desktop">
+                    <li class="header-menu__list__item"><a href="index.html">главная</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#benefits">преимущества</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#constructor">конструктор</a></li>
+                    <li class="header-menu__list__item"><a href="catalog.html">каталог</a></li>
+                    <li class="header-menu__list__item active"><a href="about.html">о нас</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#delivery-payments">доставка</a></li>
+                    <li class="header-menu__list__item _red"><a href="catalog.html">распродажа</a></li>
+                </ul>
+                <button class="header__btn openModal">обратный звонок</button>
+            </nav>
+        </div>
+    </div>
+    <!-- Статичная шапка  -->
+    <header class="header static-header">
+        <div class="container">
+            <nav class="header-menu">
+                <div class="header-menu__logo-and-menu-block">
+                    <button class="mobile__btn">
+                        <img src="img/icons/menu-burger-icon.svg" alt="Меню">
+                    </button>
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="Eva Global">
+                    </a>
+                    <button class="header__tel-link openModal">
+                        <img src="img/icons/tel-icon.svg" alt="Позвонить">
+                    </button>
+                </div>
+                <ul class="header-menu__list _desktop">
+                    <li class="header-menu__list__item"><a href="index.html">главная</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#benefits">преимущества</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#constructor">конструктор</a></li>
+                    <li class="header-menu__list__item"><a href="catalog.html">каталог</a></li>
+                    <li class="header-menu__list__item active"><a href="about.html">о нас</a></li>
+                    <li class="header-menu__list__item"><a class="menu-item" href="index.html#delivery-payments">доставка</a></li>
+                    <li class="header-menu__list__item _red"><a href="catalog.html">распродажа</a></li>
+                </ul>
+                <button class="header__btn openModal">обратный звонок</button>
+            </nav>
+        </div>
+    </header>
+    <section class="offer-other-page">
+        <div class="container">
+            <div class="offer-top offer-content">
+                <p class="offer-top__address offer-top__address_other">г. Москва</p>
+                <div class="offer-top__contacts">
+                    <a href="#" class="offer-top__contacts__social-link offer-top__contacts__social-link_other">вконтакте</a>
+                    <a href="#" class="offer-top__contacts__social-link offer-top__contacts__social-link_other">whatsapp</a>
+                    <a href="tel:89671467000" class="offer-top__contacts__phone-link offer-top__contacts__phone-link_other">8 967 146-70-00</a>
+                    <a href="index.html#contacts" class="offer-top__contacts__more-social menu-item offer-top__contacts__more-social_other">еще контакты</a>
+                </div>
+            </div>
+            <div class="offer-crumbs-block">
+                <a href="index.html" class="offer-crumbs-block__item _mobile">
+                    <img src="img/icons/home-icon.svg" alt="Главная страница">
+                </a>
+                <a href="index.html" class="offer-crumbs-block__item _desktop">Главная страница</a>
+                <a href="about.html" class="offer-crumbs-block__item active">О нас</a>
+            </div>
+        </div>
+    </section>
+    <section class="about main">
+        <div class="container _about">
+            <h1 class="section__title section__title_main">о компании «Eva Global»</h1>
+            <div class="about__info-block">
+
+                <div class="about__info-block__item">
+                    <p class="about__info-block__item__text">
+                        Компания «EvaGlobal» имеет <strong>за плечами 5 лет работы</strong> с коврами EVA для различных автомобилей. Более 3000 лекал в базе.
+                        <br><br>
+                        За нашими плечами <strong>более 25.000 изготовленных комплектов</strong> автоковриков по индивидуальным лекалам и столько же довольных покупателей!
+                        <br><br>
+                        <strong>Мы производители!</strong> А значит у вас есть возможность внести индивидуальные правки в ваши коврики, которые можно сделать как удаленно, так и по машине (зависит от уровня сложности).
+                    </p>
+                    <div class="about__info-block__item__img-wrap">
+                        <img src="img/about-imgs/about-info-1.jpg" alt="123">
+                    </div>
+                </div>
+
+                <div class="about__info-block__item about__info-block__item_list-block">
+                    <div class="about__info-block__item_list__info">
+                        <p class="about__info-block__item_list__info__title">Наши преимущества над остальными производителями:</p>
+                        <ul class="about__info-block__item_list-block__list">
+                            <li class="about__info-block__item_list__item">Мы ставим на наши коврики <strong>только штатные крепления</strong> для каждого авто, а так же пришиваем дополнительно липучки, для лучшей фиксации ковриков.</li>
+                            <li class="about__info-block__item_list__item">Наша база составляет более <strong>3000 лекал снятых ВРУЧНУЮ</strong> по автомобилю нашими мастерами, подберем комплект практически на каждую модель.</li>
+                            <li class="about__info-block__item_list__item">Материалы <strong>ТОЛЬКО отечественных производителей</strong>, с которыми сотрудничаем более 5-ии лет, а значит они проверенные временем и нашими клиентами.</li>
+                            <li class="about__info-block__item_list__item">Широкий выбор цветов — <strong>более 300 различных цветовых сочетаний</strong> — новые яркие коврики сделают ваш салон стильным и особенным.</li>
+                            <li class="about__info-block__item_list__item">Ячейки в виде ромбов и сот <strong>собирают и не пропускают влагу и грязь.</strong></li>
+                            <li class="about__info-block__item_list__item">Изготовление и отправка комплекта ковров для вас <strong>в течение 24 часов.</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about__info-block__item_list-block__img-wrap">
+                        <img src="img/about-imgs/about-info-2.jpg" alt="123">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="question-answer">
+        <div class="container">
+            <h2 class="section__title section__title_main">ответы на часто задаваемые вопросы</h2>
+            <div class="accordion">
+
+                <div class="accordion-item open">
+                    <div class="accordion-header">
+                        <h3>Какие преимущества ковриков EVA перед другими аналогами?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Из какого материала изготавливаются автоковрики?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Как ухаживать за ковриками?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Какая глубина ячеек, толщина ковриков?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Что делать, если я не могу найти свою модель в вашем каталоге?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Как происходит доставка?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Как происходит оплата?</h3>
+                        <div class="icon">
+                            <img class="accordion-item__plus active" src="img/icons/accordeon-arrow-bottom.svg" alt="Открыть">
+                            <img class="accordion-item__minus" src="img/icons/accordeon-arrow-top.svg" alt="Закрыть">
+                        </div>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-content__wrap">
+                            В отличие от ворсовых, коврики EVA быстро сохнут после мойки, так как не впитывают воду. Это гарантирует вам отсутствие неприятных запахов и плесени в салоне. В зимнее время года, в отличии от резиновых, коврики EVA не теряют свою эластичность, не лопаются и не трескаются. Основное преимущество наших ковриков – особая структура, которая обеспечивает распределение воды и грязи по ячейкам. Благодаря этому, ваша одежда, обувь и салон будут чистыми в любое время года.
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="contacts" class="contacts _white">
+        <div class="container-second">
+            <h2 class="section__title">контакты</h2>
+            <p class="section__text">Готовы ответить на любые ваши вопросы и принять заказа</p>
+            <div class="contacts__wrap">
+                <div class="contacts__wrap__map">
+                    <div id="yamap"></div>
+                </div>
+                <div class="contacts__wrap__info">
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы менеджеров:</h3>
+                        <p class="contacts__wrap__info__item__text">пн - пт 09:00-19:00 (МСК), сб - вс 09:00-18:00</p>
+                    </div>
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы отдела производства:</h3>
+                        <p class="contacts__wrap__info__item__text">пн-пт 10:00-18:00 (МСК), сб - 10:00-17:00, вс - выходной. Без обеденного перерыва.</p>
+                    </div>
+                    <div class="contacts__wrap__info__item">
+                        <h3 class="contacts__wrap__info__item__title">Время работы интернет-магазина:</h3>
+                        <p class="contacts__wrap__info__item__text">Круглосуточно</p>
+                    </div>
+                    <div class="contacts__wrap__info__social">
+                        <a href="tel:89671467000" class="contacts__wrap__info__social__tel">8 967 146-70-00</a>
+                        <div class="contacts__wrap__info__social__messengers">
+                            <a href="#" class="contacts__wrap__info__social__messengers__link">вконтакте</a>
+                            <a href="#" class="contacts__wrap__info__social__messengers__link">whatsapp</a>
+                            <button class="btn-blue contacts__wrap__info__social__messengers__btn openModal">обратный звонок</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-second _mobilee">
+            <div class="contacts__hint-block">
+                <p class="contacts__hint-block__text">
+                    <strong>Все заказы, оформленные в нерабочее время</strong>, согласовываются с покупателем (по телефону, через мессенджеры или по электронной почте) <strong>на следующий рабочий день компании</strong> и передаются в производство. Датой оформления заказа является не день оплаты, <strong>а дата его подтверждения и согласования с менеджером.</strong> Учитывайте рабочие часы компании при осуществлении звонков для консультаций.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+
+                <div class="footer__wrap__column footer__wrap__column_company-links">
+                    <a href="index.html" class="footer__logo-link">
+                        <img src="img/logo-white.svg" alt="EVA GLOBAL">
+                    </a>
+                    <p class="footer__policy-text">2023 ©<br>Все права защищены</p>
+                    <a href="policy.html" target="_blank" class="footer__policy-link footer-link-hover">Политика конфиденциальности</a>
+                    <a href="partnership.html" target="_blank" class="footer__partnership-link footer-link-hover">партнерство</a>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_navigation">
+                    <a href="index.html" class="footer__wrap__column_navigation__item footer-link-hover">главная</a>
+                    <a href="index.html#benefits" class="menu-item footer__wrap__column_navigation__item footer-link-hover">преимущества</a>
+                    <a href="index.html#constructor" class="menu-item footer__wrap__column_navigation__item footer-link-hover">конструктор</a>
+                    <a href="catalog.html" class="footer__wrap__column_navigation__item footer-link-hover">каталог</a>
+                    <a href="about.html" class="footer__wrap__column_navigation__item footer-link-hover active">о нас</a>
+                    <a href="index.html#delivery-payments" class="menu-item footer__wrap__column_navigation__item footer-link-hover">доставка</a>
+                    <a href="index.html#contacts" class="menu-item footer__wrap__column_navigation__item footer-link-hover">контакты</a>
+                    <a href="catalog.html" class="footer__wrap__column_navigation__item _red footer-link-hover">распродажа</a>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_company-info">
+                    <div class="footer__wrap__column_company-info__block">
+                        <h4 class="footer__wrap__column_company-info__title">наш адрес</h4>
+                        <p class="footer__wrap__column_company-info__text">г. Москва</p>
+                    </div>
+                    <div class="footer__wrap__column_company-info__block">
+                        <h4 class="footer__wrap__column_company-info__title">наши контакты:</h4>
+                        <a href="tel:89671467000" class="footer__wrap__column_company-info__block__tel footer-link-hover">8 967 146-70-00</a>
+                        <a href="mailto:test@gmail.com" class="footer__wrap__column_company-info__block__mail footer-link-hover">Почта: почта@mail.ru</a>
+                    </div>
+                </div>
+
+                <div class="footer__wrap__column footer__wrap__column_btn">
+                    <a href="catalog.html" class="btn-red">каталог</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно обратного зовнка -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modalCloseBtn" class="modal-close"><img src="img/icons/modal-close-icon.svg" alt="X"></span>
+            <h2 class="section__title section__title_modal">закажите обратный звонок</h2>
+            <form action="#" class="modal-content__container">
+                <div class="modal__input__wrap">
+                    <span class="modal__input__wrap__number num-ellipse">1</span>
+                    <input class="modal__input" type="text" name="user_name" placeholder="Ваше имя">
+                </div>
+                <div class="modal__input__wrap">
+                    <span class="modal__input__wrap__number num-ellipse">2</span>
+                    <input class="modal__input" type="tel" name="user_phone" placeholder="Номер телефона">
+                </div>
+                <button type="submit" class="btn-red modal__btn">отправить</button>
+                <p class="modal__policy-text">Соглашаюсь на обработку персональных данных</p>
+            </form>
+            
+        </div>
+    </div>
+
+    
+
+
+    
+
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
