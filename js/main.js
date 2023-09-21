@@ -65,8 +65,8 @@ function isElementInViewport(element) {
 // =====================================================================
 // Отложенная загрузка яндекс карт
 // Проверка элемента на наличие его в DOM 
-if (document.querySelector('#yamap')) {
-  let ok = false;
+
+let ok = false;
 
   function loadMap(mapUrl, targetElementId) {
     if (ok === false) {
@@ -83,4 +83,3 @@ if (document.querySelector('#yamap')) {
   window.addEventListener('scroll', function () {
     loadMap('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae588bc8558c4d51c7308a36ae9729e8993abf3c8fc46f0339f06d0ad05ceee75&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true', 'yamap');
   });
-}
